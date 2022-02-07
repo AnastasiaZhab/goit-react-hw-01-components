@@ -1,5 +1,5 @@
-import Profile from './components/Profile/Profile'
-import Statistics from './components/Statistics/Statistics'
+import Profile from './components/Profile'
+import Statistics from './components/Statistics'
 import FriendList from './components/FriendList/Friendlist';
 import TransactionHistory from './components/Transaction/TransactionHistory';
 import './App.css';
@@ -7,10 +7,11 @@ import user from './data/user.json'
 import data from './data/data.json'
 import friends from './data/friends.json'
 import transactions from './data/transactions.json'
+import './App.css'
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Profile
         username={user.username}
         tag={user.tag}
